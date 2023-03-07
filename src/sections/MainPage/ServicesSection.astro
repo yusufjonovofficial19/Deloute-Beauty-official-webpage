@@ -1,0 +1,87 @@
+---
+import ImageWrap from "../../components/ImageWrap.astro";
+---
+
+<section class="services">
+    <div class="container">
+      <div class="wrapper">
+  
+        <!-- card -->
+        <div class="card">
+          <ImageWrap height="320px">
+            <img src="src/assets/images/services-1.jpg" alt="">
+          </ImageWrap>
+  
+          <h3 class="name">Парикмахерские услуги</h3>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <ImageWrap height="320px">
+            <img src="src/assets/images/services-2.jpg" alt="">
+          </ImageWrap>
+  
+          <h3 class="name">Маникюр</h3>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <ImageWrap height="320px">
+            <img src="src/assets/images/services-3.jpg" alt="">
+          </ImageWrap>
+  
+          <h3 class="name">Педикюр</h3>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <ImageWrap height="320px">
+            <img src="src/assets/images/services-4.jpg" alt="">
+          </ImageWrap>
+  
+          <h3 class="name">Косметология</h3>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <ImageWrap height="320px">
+            <img src="src/assets/images/services-5.jpg" alt="">
+          </ImageWrap>
+  
+          <h3 class="name">Эстетист по телу</h3>
+        </div>
+        <!-- card -->
+        <div class="card">
+          <ImageWrap height="320px">
+            <img src="src/assets/images/services-6.jpg" alt="">
+          </ImageWrap>
+  
+          <h3 class="name">Визаж</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style lang="scss">
+  @import 'src/assets/styles/utils/var.scss';
+  
+    .services{
+      padding-bottom: 162px;
+  
+      .wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 60px 20px;
+  
+        .card{
+          width: 100%;
+          max-width: 416px;
+          min-width: 350px;
+  
+          .name{
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $second-font;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  </style>

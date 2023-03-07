@@ -1,0 +1,35 @@
+@mixin media($width) {
+  @media(max-width: $width) {
+    @content;
+  }
+}
+
+@mixin xl{
+  @media(max-width: $xl) {
+    @content;
+  }
+}
+
+@mixin lg{
+  @media(max-width: $lg) {
+    @content;
+  }
+}
+
+@mixin md{
+  @media(max-width: $md) {
+    @content;
+  }
+}
+
+@mixin sm{
+  @media(max-width: $sm) {
+    @content;
+  }
+}
+
+@mixin xs{
+  @media(max-width: $xs) {
+    @content;
+  }
+}

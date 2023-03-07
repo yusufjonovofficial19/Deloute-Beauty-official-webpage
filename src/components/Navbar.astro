@@ -1,0 +1,108 @@
+<script>
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 0) {
+        document.querySelector('.header').classList.add('scrolled')
+      } else {
+        document.querySelector('.header').classList.remove('scrolled')
+      }
+    })
+  </script>
+
+
+<header class="header">
+    <div class="container navbar">
+        <!-- ICON -->
+        <div class="icon">
+            <a href="">
+                <img src="src/assets/icons/instagram.svg" alt="icon">
+            </a>       
+         </div>
+        <!-- /.icon -->
+
+        <!-- MENU -->
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="/" class="link">Главная</a>
+            </li>
+            <li class="menu-item">
+                <a href="/masters" class="link">Мастера</a>
+            </li>
+            <li class="menu-item">
+                <a href="/" class="link">Косметика</a>
+            </li>
+        </ul>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="src/assets/icons/logo.svg" alt="logo">
+        </div>
+        <!-- /.logo -->
+
+        <!-- MENU -->
+        <ul class="menu">
+            <li class="menu-item">
+                <a href="/sales" class="link">Акции</a>
+            </li>
+            <li class="menu-item">
+                <a href="/" class="link">Отзывы</a>
+            </li>
+            <li class="menu-item">
+                <a href="/contacts" class="link">Контакты</a>
+            </li>
+        </ul>
+
+        <!-- ICON -->
+        <div class="icon">
+            <a href="">
+                <img src="src/assets/icons/dash.svg" alt="icon">
+            </a>
+        </div>
+        <!-- /.icon -->
+    </div>
+    <!-- /.container -->
+</header>
+
+<style lang="scss">
+@import "src/assets/styles/utils/var.scss";
+
+    .header {
+        width: 100%;
+        position: fixed;
+        transition: 0.3s;
+        z-index: 999;
+
+        &.scrolled {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+
+            .navbar {
+                padding: 10px 0;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: 0.5s;
+
+            .menu {
+                display: flex;
+                gap: 80px;
+
+                .link {
+                    font-weight: 600;
+                    transition: 0.3s;
+                    border-bottom: 1px solid transparent;
+
+                    &:hover {
+                        color: $brand;
+                        border-color: $brand;
+                    }
+                }
+            }
+        }
+    }
+</style>

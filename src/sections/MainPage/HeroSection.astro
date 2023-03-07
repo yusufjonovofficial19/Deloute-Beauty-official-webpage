@@ -1,0 +1,48 @@
+<section class="hero">
+    <div class="container wrapper">
+        <h1 class="title">Салон красоты <span>«Delote-Beauty»</span> на Крестовском</h1>
+
+        <a href="#" class="btn">
+            <img src="src/assets/icons/mouse.svg" alt="icon">
+            <span>Прокрутите вниз</span>
+        </a>
+    </div>
+    <!-- /.container wrapper -->
+</section>
+
+<style lang="scss">
+    @import 'src/assets/styles/utils/var.scss';
+
+
+    .hero {
+        height: 100vh;
+        background: url('../../assets/images/hero-bg (2).jpg') no-repeat center / cover;
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+
+            .title {
+                font-size: 72px;
+                font-weight: 700;
+                text-align: center;
+                font-family: $second-font;
+
+                span {
+                    display: block;
+                }
+            }
+
+            .btn {
+                position: absolute;
+                bottom: 100px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+</style>

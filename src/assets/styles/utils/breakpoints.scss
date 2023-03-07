@@ -1,0 +1,23 @@
+@include xl{
+  .container{
+    width: $lg;
+  }
+}
+
+@include lg{
+  .container{
+    width: $md;
+  }
+}
+
+@include md{
+  .container{
+    width: $sm;
+  }
+}
+
+@include sm{
+  .container{
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+---
+import Title from "../../components/Title.astro";
+---
+
+<section class="proceandservices">
+    <div class="container">
+      <Title>Наши работы</Title>
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="/" class="menu-link">Показать все</a>
+          </li>
+          <li class="menu-item">
+            <a href="/" class="menu-link">Парикмахерские услуги</a>
+          </li>
+          <li class="menu-item">
+            <a href="/" class="menu-link">Маникюр</a>
+          </li>
+          <li class="menu-item">
+            <a href="/" class="menu-link">Педикюр</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="wrapper">
+        <div class="image">
+          <div class="galery">
+            <img src="src/assets/images/work-9.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-8.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-7.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-6.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-5.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-4.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-3.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-2.jpg" alt="">
+          </div>
+          <div class="galery">
+            <img src="src/assets/images/work-1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style lang="scss">
+  @import '../../assets/styles/utils/var.scss';
+  
+    .proceandservices {
+      .container {
+        .navbar {
+          
+          
+          .menu{
+            margin-top: 80px;
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            
+  
+            .menu-link{
+              transition: 0.3s;
+              border-bottom: 1px solid transparent;
+          
+              &:hover{
+                color: $brand;
+                border-bottom: 1px solid $brand;
+              }
+            }
+  
+          }
+        }
+  
+        .wrapper{
+          .image{
+            margin: 80px 0 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            
+          }
+        }
+      }
+    }
+  </style>
